@@ -220,7 +220,7 @@ tail -f /var/log/syslog
 
 #### 改善方法
 
-開発およびデバッグには NSLog を有効にする define を使用し、ソフトウェアを出荷する前に dedine を無効にします。これは適切な PREFIX_HEADER (\*.pch) ファイルに以下のコードを記述することで実行できます。
+開発およびデバッグには NSLog を有効にする define を使用し、ソフトウェアを出荷する前に define を無効にします。これは適切な PREFIX_HEADER (\*.pch) ファイルに以下のコードを記述することで実行できます。
 
 ```C#
 #ifdef DEBUG
